@@ -36,10 +36,12 @@
   </head>
 
   <body>
-    <%= turbo_mount("Navbar", props: {children: "Log in", type:"submit"}) %>
+    <%= turbo_mount("Navbar") %>
 
-    <main class="container mx-auto mt-28 px-5 flex flex-col">
+    <main class="container min-h-screen mx-auto mt-28 px-5">
       <%= yield %>
     </main>
+
+    <%= turbo_mount("Footer") %>
   </body>
 </html>

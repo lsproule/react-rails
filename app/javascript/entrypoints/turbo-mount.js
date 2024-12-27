@@ -32,8 +32,12 @@
 import { TurboMount } from "turbo-mount";
 import { registerComponent } from "turbo-mount/react";
 import { Button } from "@/components/button";
-import { Navbar } from "@/components/navbar"
+import { Navbar } from "@/components/navbar";
+import { LandingPage } from "@/components/LandingPage";
+import { Footer } from "@/components/Footer";
 const turboMount = new TurboMount(); // or new TurboMount({ application })
 
 registerComponent(turboMount, "Button", Button);
 registerComponent(turboMount, "Navbar", Navbar);
+registerComponent(turboMount, "Footer", Footer);
+registerComponent(turboMount, "LandingPage", LandingPage);
